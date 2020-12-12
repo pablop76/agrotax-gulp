@@ -1,6 +1,6 @@
 # strona biura rachunkowego AgroTax
 
-![Agrotax](./images/agrotax-project.jpg)
+![Agrotax](./agrotax-project.jpg)
 
 ## użyte technologie.
 
