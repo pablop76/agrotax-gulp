@@ -29,3 +29,19 @@
 1. uruchomienie
 
 - gulp
+
+## bug
+- w plikach html json np.
+        <!-- formularz kontaktowy -->
+          @@include('./inc/_contact-form.html', {
+          "title":"INFORMACJE I ZAPYTANIA",
+          "name": "imie i nazwisko",
+          "email":"email",
+          "phone":"Telefon",
+          "message":"Wiadomość",
+          "privacy-policy-start":"Przesyłajac ten formularz, akceptujesz naszą",
+          "privacy-policy-link":"Politykę prywatności",
+          "privacy-policy-end":"oraz wyrażasz zgodę na przetwarzanie Twoich danych osobowych.",
+          "send":"Wyślij"
+          })
+klucz i wartość musi być w jednej linijce
