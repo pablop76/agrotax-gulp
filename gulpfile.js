@@ -11,6 +11,7 @@ const browserSync = require("browser-sync").create();
 const webpack = require("webpack");
 const fileinclude = require("gulp-file-include");
 const image = require("gulp-image");
+const htmlmin = require('gulp-htmlmin');
 
 sass.compiler = require("sass"); ////node-sass dla klasycznego
 
@@ -97,9 +98,9 @@ const html = function (cb) {
         basepath: "@file",
       })
     )
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("dist"))
 };
-
 
 const htmlReload = function (cb) {
   browserSync.reload();
