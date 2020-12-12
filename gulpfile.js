@@ -97,8 +97,9 @@ const html = function (cb) {
         basepath: "@file",
       })
     )
-    .pipe(gulp.dest("dist"));
+    .pipe(gulp.dest("dist"))
 };
+
 
 const htmlReload = function (cb) {
   browserSync.reload();
