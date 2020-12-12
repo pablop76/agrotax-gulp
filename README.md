@@ -32,6 +32,7 @@
 
 ## bug
 - w plikach html json np.
+```json
         <!-- formularz kontaktowy -->
           @@include('./inc/_contact-form.html', {
           "title":"INFORMACJE I ZAPYTANIA",
@@ -44,4 +45,5 @@
           "privacy-policy-end":"oraz wyrażasz zgodę na przetwarzanie Twoich danych osobowych.",
           "send":"Wyślij"
           })
+```
 klucz i wartość musi być w jednej linijce
