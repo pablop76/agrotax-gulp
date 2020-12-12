@@ -1,0 +1,79 @@
+<div class="uk-card uk-card-default uk-card-body">
+  <h3 class="uk-card-title">@@title</h3>
+  <form class="form" action="./form.php" method="POST">
+    <div class="uk-grid-match uk-child-width-expand@s" data-uk-grid>
+      <div class="form-wrapper-contol">
+        <label class="uk-form-label">@@name<sup>*</sup></label>
+        <div class="uk-form-controls">
+          <div class="uk-margin">
+            <div class="uk-inline uk-display-inline">
+              <span class="uk-form-icon" data-uk-icon="icon: user"></span>
+              <input class="uk-input" type="text" name="name" required />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-wrapper-contol">
+        <label class="uk-form-label">@@email<sup>*</sup></label>
+        <div class="uk-form-controls">
+          <div class="uk-margin">
+            <div class="uk-inline uk-display-inline">
+              <span class="uk-form-icon" data-uk-icon="icon: mail"></span>
+              <input
+                class="uk-input"
+                type="email"
+                id="email"
+                name="email"
+                size="30"
+                required
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-wrapper-contol">
+      <label class="uk-form-label">@@phone</label>
+      <div class="uk-form-controls">
+        <div class="uk-margin">
+          <div class="uk-inline uk-display-inline">
+            <span class="uk-form-icon" data-uk-icon="icon: phone"></span>
+            <input class="uk-input" type="tel" id="phone" name="phone" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-wrapper-contol">
+      <label class="uk-form-label">@@message<sup>*</sup></label>
+      <textarea
+        class="uk-textarea"
+        rows="5"
+        placeholder=""
+        id="message"
+        name="message"
+        required
+      ></textarea>
+    </div>
+    <div class="form-wrapper-contol">
+      <div class="uk-margin">
+        <input
+          class="uk-checkbox"
+          type="checkbox"
+          id="chackbox"
+          name="consent"
+          required
+        />
+        <label class="uk-form-label uk-display-inline" for="chackbox"
+          >@@privacy-policy-start
+          <a href="./polityka-prywatnosci.html">@@privacy-policy-link</a>
+          @@privacy-policy-end<sup>*</sup></label
+        >
+      </div>
+    </div>
+    <div class="form-wrapper-contol">
+      <button type="submit" class="uk-button uk-button-default uk-margin">
+        @@send
+      </button>
+    </div>
+  </form>
+</div>

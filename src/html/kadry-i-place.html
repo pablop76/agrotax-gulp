@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  @@include('./inc/_head.html')
+  <title>Usługi kadrowo płacowe - Agrotax</title>
+  <meta name="description"
+    content="Agrotax - Biuro Rachunkowe Rawa Mazowiecka, Skierniewice, Tomaszów Mazowiecki, Biała Rawska, Grójec, Łódź. Rozliczanie podatków. Rozliczanie dochodów z zagranicy " />
+  <meta name="keywords"
+    content="Biuro Rachunkowe Agrotax - Rawa Mazowiecka, Skierniewice, Tomaszów Mazowiecki, Biała Rawska, Grójec, Łódź, Prowadzenie rachunkowości, Rozliczenia z Urzędem Skarbowym, ZUS, deklaracje GUS" />
+  <link rel="stylesheet" href="./css/style.min.css" type="text/css" />
+</head>
+
+<body>
+  <!-- preloader -->
+  <div class="preloader uk-visible@s">
+    <div uk-spinner></div>
+  </div>
+  <!-- kontakt bar -->
+  @@include('./inc/_contact-bar.html')
+  <!-- nav bar + logo + Offcanvas -->
+  @@include('./inc/_navbar.html',{"kadry":"uk-active"})
+  <!-- slider -->
+  @@include('./inc/_slideshow.html')
+  <!-- sekcja Kadry i płace -->
+  <div class="uk-section">
+    <div class="uk-container uk-container-large">
+      <h2 class="uk-text-center divider">Usługi kadrowo płacowe</h2>
+      <div class="uk-child-width-expand@s uk-text-left" data-uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <p>
+              W ramach naszych usług zapewniamy kompleksową obsługę w zakresie
+              kadr, płac oraz bieżące doradztwo w obszarze prawa pracy,
+              ubezpieczeń społecznych jak też BHP. Wspieramy naszych Klientów
+              w zakresie prawidłowo prowadzonej dokumentacji kadrowo-płacowej.
+              Dokonujemy audytu kadrowo-płacowego zgodnie z obowiązującymi
+              regulacjami prawnymi, oraz przygotowujemy wymaganą dokumentację
+              dla Państwowej Inspekcji Pracy. Oferujemy usługi w następujących
+              obszarach:
+            </p>
+            <ul uk-tab>
+              <li><a href="#">Kadry</a></li>
+              <li><a href="#">Płace</a></li>
+              <li><a href="#">Inne usługi</a></li>
+            </ul>
+
+            <ul class="uk-switcher uk-margin">
+              <li>
+                <div class="uk-container">
+                  <ul class="circle">
+                    <li>doradztwo w doborze formy zatrudnienia pracownika</li>
+                    <li>
+                      przygotowanie i prowadzenie akt osobowych pracowników
+                    </li>
+                    <li>
+                      sporządzenie umów o pracę a także umowy zlecenia i umów
+                      o dzieło
+                    </li>
+                    <li>
+                      prowadzenie całości spraw związanych z absencją
+                      pracowniczą - ewidencja i rozliczenie czasu pracy
+                    </li>
+                    <li>
+                      ustalanie uprawnień do urlopów wypoczynkowych, odpraw,
+                      odszkodowań oraz ekwiwalentów
+                    </li>
+                    <li>
+                      organizacja wstępnych i okresowych badań lekarskich
+                    </li>
+                    <li>organizacja szkoleń BHP</li>
+                    <li>
+                      sporządzenie dokumentacji kończącej współpracę z
+                      pracownikami - wypowiedzenia, świadectwa pracy.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="uk-container">
+                  <ul class="circle">
+                    <li>
+                      rejestracja pracownika wraz z rodziną w Zakładzie
+                      Ubezpieczeń Społecznych
+                    </li>
+                    <li>
+                      naliczanie wynagrodzeń wynikających z umowy o pracę
+                    </li>
+                    <li>
+                      naliczanie wynagrodzeń za czas choroby jak też zasiłki
+                      obciążające budżet ZUS
+                    </li>
+                    <li>
+                      naliczanie pozostałych składników wynikających z
+                      regulaminu pracy lub wynagrodzeń
+                    </li>
+                    <li>
+                      prowadzenie kartotek wynagrodzeń, zasiłkowych oraz
+                      potrąceń
+                    </li>
+                    <li>
+                      naliczanie umów zleceń oraz umów o dzieło dla osób
+                      współpracujących z firmą
+                    </li>
+                    <li>
+                      sporządzenie deklaracji rozliczeniowych z ZUS w systemie
+                      Płatnik
+                    </li>
+                    <li>
+                      sporządzenie deklaracji rozliczeniowych w systemie PFRON
+                    </li>
+                    <li>
+                      sporządzenie deklaracji rozliczeniowych z Urzędem
+                      Skarbowym - Pit-4, Pit-11
+                    </li>
+                    <li>bieżąca współpraca z Urzędem Statystycznym.</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="uk-container">
+                  <ul class="circle">
+                    <li>audyt kadrowo-płacowy</li>
+                    <li>obsługa kapitału początkowego</li>
+                    <li>
+                      pomoc w zakresie opracowania regulaminu pracy,
+                      regulaminu wynagrodzeń oraz ZFŚS
+                    </li>
+                    <li>wypełnienie druków Rp-7, Rp-9</li>
+                    <li>
+                      weryfikacja dokumentacji kadrowo- płacowej dla firm nie
+                      objętych umową na potrzeby kontroli z instytucji
+                      państwowych
+                    </li>
+                    <li>
+                      konsultacje (również telefoniczne lub mailowe) w
+                      zakresie bieżących spraw dotyczących pracowników.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <!-- right section accordion -->
+          @@include('./inc/_accordion.html')
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- aktualny wpis z bloga -->
+  @@include("./inc/_tarcza-finansowa-introduction.html")
+  <!-- Przydatne informacje - lista -->
+  @@include("./inc/_useful-links.html")
+  <!-- stopka -->
+  @@include("./inc/_footer.html")
+  <script src="js/bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    @@include('./inc/_head.html')
+    <title>Tarcza finansowa - Agrotax</title>
+    <meta name="description"
+        content="Agrotax - Biuro Rachunkowe Rawa Mazowiecka, Skierniewice, Tomaszów Mazowiecki, Biała Rawska, Grójec, Łódź. Rozliczanie podatków. Rozliczanie dochodów z zagranicy " />
+    <meta name="keywords"
+        content="Biuro Rachunkowe Agrotax - Rawa Mazowiecka, Skierniewice, Tomaszów Mazowiecki, Biała Rawska, Grójec, Łódź, Prowadzenie rachunkowości, Rozliczenia z Urzędem Skarbowym, ZUS, deklaracje GUS" />
+    <link rel="stylesheet" href="./css/style.min.css" type="text/css" />
+</head>
+
+<body>
+    <!-- preloader -->
+    <div class="preloader uk-visible@s">
+        <div uk-spinner></div>
+    </div>
+    <!-- kontakt bar -->
+    @@include('./inc/_contact-bar.html')
+    <!-- nav bar + logo + Offcanvas -->
+    @@include('./inc/_navbar.html',{"kadry":"uk-active"})
+    <!-- główny artykół -->
+    <div class="uk-section">
+        <div class="uk-container">
+            <article class="uk-article uk-card uk-card-body">
+
+                <h1 class="uk-article-title"><a class="uk-link-reset divider divider_left" href="">Tarcza antykryzysowa
+                        – co to
+                        takiego?</a>
+                </h1>
+
+                <p class="uk-article-meta">Autor <a href="#">Agrotax</a> 12 Listopad 2020. Opublikowany na <a
+                        href="#">Blogu</a></p>
+
+                <p class="uk-text-lead">Tarcza to pakiet rozwiązań przygotowanych przez rząd, który ma ochronić polskie
+                    państwo i obywateli przed kryzysem wywołanym pandemią koronawirusa. Opiera się na pięciu filarach:
+                </p>
+
+                <div class="uk-section">
+                    <div class="uk-container uk-card uk-card-body">
+                        <ul class="circle">
+                            <li>Ochronie miejsc pracy i bezpieczeństwu pracowników,
+                            </li>
+                            <li>Finansowaniu przedsiębiorców,
+                            </li>
+                            <li>Ochronie zdrowia,
+                            </li>
+                            <li>Wzmocnieniu systemu finansowego,
+                            </li>
+                            <li>Inwestycjach publicznych
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p>
+                    Tarcza ustabilizuje polską gospodarkę, a także da jej impuls inwestycyjny. Szacujemy, że wartość
+                    wsparcia oferowanego w ramach Tarczy Antykryzysowej i Tarczy Finansowej wyniesie ponad 312 mld zł.
+                </p>
+            </article>
+        </div>
+    </div>
+    <!-- Przydatne informacje - lista -->
+    @@include("./inc/_useful-links.html")
+    <!-- stopka -->
+    @@include("./inc/_footer.html")
+    <script src="js/bundle.min.js"></script>
+</body>
+
+</html>

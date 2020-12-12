@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  @@include('./inc/_head.html')
+  <title>Ksiegowość zdalna - Agrotax</title>
+  <meta name="description"
+    content="Agrotax - Biuro Rachunkowe Rawa Mazowiecka, Skierniewice, Tomaszów Mazowiecki, Biała Rawska, Grójec, Łódź. Rozliczanie podatków. Rozliczanie dochodów z zagranicy " />
+  <meta name="keywords"
+    content="Biuro Rachunkowe Agrotax - Rawa Mazowiecka, Skierniewice, Tomaszów Mazowiecki, Biała Rawska, Grójec, Łódź, Prowadzenie rachunkowości, Rozliczenia z Urzędem Skarbowym, ZUS, deklaracje GUS" />
+  <link rel="stylesheet" href="./css/style.min.css" type="text/css" />
+</head>
+
+<body>
+  <!-- preloader -->
+  <div class="preloader uk-visible@s">
+    <div uk-spinner></div>
+  </div>
+  <!-- kontakt bar -->
+  @@include('./inc/_contact-bar.html')
+  <!-- nav bar + logo + Offcanvas -->
+  @@include('./inc/_navbar.html',{"ksiegowosc":"uk-active"})
+  <!-- slider -->
+  @@include('./inc/_slideshow.html')
+  <!-- sekcja Ksiegowość zdalna -->
+  <div class="uk-section">
+    <div class="uk-container uk-container-large">
+      <h2 class="uk-text-center divider">Księgowość zdalna</h2>
+      <div class="uk-child-width-expand@s uk-text-left" data-uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <h3>
+              Wraz ze zmieniającymi się potrzebami rynku, proponujemy zdalną
+              obsługę poprzez dostarczanie i/lub odbieranie dokumentów przy
+              pomocy:
+            </h3>
+            <ul class="circle">
+              <li>Elektronicznej poczty,</li>
+              <li>kuriera,</li>
+              <li>pracownika naszego biura.</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <!-- right section accordion -->
+          @@include('./inc/_accordion.html')
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- aktualny wpis z bloga -->
+  @@include("./inc/_tarcza-finansowa-introduction.html")
+  <!-- Przydatne informacje - lista -->
+  @@include("./inc/_useful-links.html")
+  <!-- stopka -->
+  @@include("./inc/_footer.html")
+  <script src="js/bundle.min.js"></script>
+</body>
+
+</html>

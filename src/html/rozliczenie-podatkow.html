@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  @@include('./inc/_head.html')
+  <title>Rozliczanie podatków - Agrotax</title>
+  <meta name="description"
+    content="Agrotax - Biuro Rachunkowe Rawa Mazowiecka, Skierniewice, Tomaszów Mazowiecki, Biała Rawska, Grójec, Łódź. Rozliczanie podatków. Rozliczanie dochodów z zagranicy " />
+  <meta name="keywords"
+    content="Biuro Rachunkowe Agrotax - Rawa Mazowiecka, Skierniewice, Tomaszów Mazowiecki, Biała Rawska, Grójec, Łódź, Prowadzenie rachunkowości, Rozliczenia z Urzędem Skarbowym, ZUS, deklaracje GUS" />
+  <link rel="stylesheet" href="./css/style.min.css" type="text/css" />
+</head>
+
+<body>
+  <!-- preloader -->
+  <div class="preloader uk-visible@s">
+    <div uk-spinner></div>
+  </div>
+  <!-- kontakt bar -->
+  @@include('./inc/_contact-bar.html')
+  <!-- nav bar + logo + Offcanvas -->
+  @@include('./inc/_navbar.html',{"rozliczenie":"uk-active"})
+  <!-- slider -->
+  @@include('./inc/_slideshow.html')
+  <!-- sekcja Rozliczanie podatków -->
+  <div class="uk-section">
+    <div class="uk-container uk-container-large">
+      <h2 class="uk-text-center divider">Rozliczenie podatków</h2>
+      <div class="uk-child-width-expand@s uk-text-left" data-uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <h3>
+              Zajmujemy się także pomocą w zakresie rozliczania podatków.
+              Proponujemy m.in.:
+            </h3>
+            <ul class="circle" data-uk-scrollspy="cls: uk-animation-fade; target: li; delay: 200;">
+              <li>Pomoc w optymalizacji kosztów,</li>
+              <li>
+                Pomoc w zakresie wyboru najkorzystniejszych form
+                opodatkowania,
+              </li>
+              <li>Pomoc w optymalizacji kosztów,</li>
+              <li>
+                Rozliczanie podatków osób fizycznych naliczanych od dochodów
+                osiąganych w Polsce i za granicą.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <!-- right section accordion -->
+          @@include('./inc/_accordion.html')
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- aktualny wpis z bloga -->
+  @@include("./inc/_tarcza-finansowa-introduction.html")
+  <!-- Przydatne informacje - lista -->
+  @@include("./inc/_useful-links.html")
+  <!-- stopka -->
+  @@include("./inc/_footer.html")
+  <script src="js/bundle.min.js"></script>
+</body>
+
+</html>
