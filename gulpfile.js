@@ -91,7 +91,7 @@ const js = function (cb) {
 
 const html = function (cb) {
   return gulp
-    .src(["src/html/*.html"])
+    .src(["src/html/*.html", "!src/html/inc/*.html"])
     .pipe(
       fileinclude({
         prefix: "@@",

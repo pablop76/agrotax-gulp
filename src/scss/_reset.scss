@@ -1,23 +1,27 @@
-body{
+body {
     font-family: 'arimoregular', sans-serif;
 }
-picture{
-    img{
-        width: 100%;
-    }
-}
 
-.bg-base-color{
+// picture{
+//     img{
+//         width: 100%;
+//     }
+// }
+
+.bg-base-color {
     background-color: $base-color;
 }
+
 .uk-tab>.uk-active>a {
     color: #333;
     border-color: $base-color-dark;
 }
+
 .uk-button-text::before {
     border-bottom: 1px solid $base-color-dark;
 }
-@media (min-width: 960px){
+
+@media (min-width: 960px) {
     .uk-section {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -50,10 +54,10 @@ picture{
 
 
 // dla cookie
-@media (max-width: 361px){
+@media (max-width: 361px) {
     #cconsent-bar {
         .ccb__right {
-            white-space: normal!important;
+            white-space: normal !important;
         }
     }
 }
