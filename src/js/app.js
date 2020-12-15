@@ -132,3 +132,9 @@ if (document.querySelector(".form")) {
     });
 
 }
+
+const jsMobileAniamateDisabled = document.querySelectorAll(".js-mobile-aniamate-disabled");
+const screenWidth = window.screen.width;
+if (screenWidth < 640) {
+    jsMobileAniamateDisabled.forEach(el => el.setAttribute('data-uk-scrollspy', ''))
+}
