@@ -11,10 +11,13 @@ if (document.querySelector(".form")) {
     class FormValidate {
         constructor(form, options) {
             const defaultOptions = {
+                //domyślne opcje naszej walidacji
                 classError: "error",
             };
             this.form = form;
+
             this.options = Object.assign({}, defaultOptions, options);
+            //wyłączamy walidację HTML
             this.form.setAttribute("novalidate", "novalidate");
             this.prepareElements();
             this.bindSubmit();
@@ -47,6 +50,7 @@ if (document.querySelector(".form")) {
                     type === "tel" ||
                     tag === "select"
                 ) {
+                    //checkboxa i radio
                     eventName = "change";
                 }
 
@@ -75,6 +79,7 @@ if (document.querySelector(".form")) {
                     this.markFieldAsError(el, !el.checkValidity());
                     counter = !el.checkValidity() ? counter : counter - 1;
                 }
+                // jezeli pola zostały wypełnione wyslij forme
                 if (!counter) {
                     const form = this.form;
                     const elements = this.getFields();
@@ -131,10 +136,11 @@ if (document.querySelector(".form")) {
         const fv = new FormValidate(form, cfg);
     });
 
+} const removeAnimateMobile = () => {
+    const jsMobileAniamateDisabled = document.querySelectorAll(".js-mobile-aniamate-disabled");
+    const screenWidth = window.screen.width;
+    if (screenWidth < 640) {
+        jsMobileAniamateDisabled.forEach(el => el.setAttribute('data-uk-scrollspy', ''))
+    }
 }
-
-const jsMobileAniamateDisabled = document.querySelectorAll(".js-mobile-aniamate-disabled");
-const screenWidth = window.screen.width;
-if (screenWidth < 640) {
-    jsMobileAniamateDisabled.forEach(el => el.setAttribute('data-uk-scrollspy', ''))
-}
+removeAnimateMobile();
