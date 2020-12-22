@@ -110,6 +110,7 @@ const htmlReload = function (cb) {
 const watch = function () {
   gulp.watch("src/scss/**/*.scss", { usePolling: true }, gulp.series(css));
   gulp.watch("src/js/**/*.js", { usePolling: true }, gulp.series(js));
+  gulp.watch("src/images/*", { usePolling: true }, gulp.series(images));
   gulp.watch(
     "src/html/**/*.html",
     { usePolling: true },
